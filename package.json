@@ -1,0 +1,29 @@
+{
+  "name": "expo-e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "cd backend && npm install && cd ../admin && npm install && npm run build",
+    "start": "cd backend && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudhirYadav5678/eCommerce-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SudhirYadav5678/eCommerce-web/issues"
+  },
+  "homepage": "https://github.com/SudhirYadav5678/eCommerce-web#readme",
+  "dependencies": {
+    "admin": "^1.4.1",
+    "backend": "^0.0.0"
+  }
+}
