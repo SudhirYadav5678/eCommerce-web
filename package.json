@@ -24,6 +24,8 @@
   "homepage": "https://github.com/SudhirYadav5678/eCommerce-web#readme",
   "dependencies": {
     "admin": "^1.4.1",
-    "backend": "^0.0.0"
+    "backend": "^0.0.0",
+    "cloudinary": "^2.8.0",
+    "mongoose": "^9.0.2"
   }
 }
