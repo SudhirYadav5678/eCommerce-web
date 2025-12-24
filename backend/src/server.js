@@ -6,6 +6,11 @@ import { functions, inngest } from "./config/inngest.js";
 import { ENV } from "./config/env.js";
 import { connectDB } from "./config/db.js";
 
+
+
+import adminRoutes from "./routes/admin.route.js"
+
+
 const app = express();
 const __dirname = path.resolve();
 app.use(express.json())
@@ -16,7 +21,7 @@ app.use("/api/inngest", serve({ client: inngest, functions: functions }))
 app.get("/api/health", (req, res) => {
     res.json({ message: "Hello Server" });
 });
-
+app.use("/api/admin", adminRoutes)
 
 //make it prouduction
 if (ENV.NODE_ENV === "production") {
